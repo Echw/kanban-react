@@ -1,0 +1,5 @@
+.columnsBox {
+  padding: 5rem 20rem;
+  display: flex;
+  justify-content: space-around;
+}

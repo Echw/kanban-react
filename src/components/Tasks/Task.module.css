@@ -1,0 +1,40 @@
+.taskBox {
+  width: 80%;
+  background: #ffffff;
+  border-radius: 15px;
+}
+
+.lineBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.lineBox p {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #414141;
+}
+
+.lineBox button {
+  height: fit-content;
+}
+.hashtag {
+  background: linear-gradient(103.34deg, #45d900 -15.04%, #30ffcd 180.35%);
+  border-radius: 5px;
+  width: fit-content;
+  margin-left: 1rem;
+}
+
+.hashtag p {
+  padding: 0 1rem;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #ffffff;
+}
