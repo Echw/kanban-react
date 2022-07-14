@@ -2,6 +2,7 @@
   width: 80%;
   background: #ffffff;
   border-radius: 15px;
+  margin-bottom: 1rem;
 }
 
 .lineBox {
@@ -24,14 +25,14 @@
   height: fit-content;
 }
 .hashtag {
-  background: linear-gradient(103.34deg, #45d900 -15.04%, #30ffcd 180.35%);
-  border-radius: 5px;
+  background: #356d7e97;
+  border-radius: 15px;
   width: fit-content;
   margin-left: 1rem;
 }
 
 .hashtag p {
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   font-family: "Segoe UI";
   font-style: normal;
   font-weight: 400;

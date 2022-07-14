@@ -6,7 +6,9 @@ const Column = (props) => {
   return (
     <div style={{ borderImage: props.color }} className={classes.box}>
       <h2>{props.name}</h2>
-      <Task></Task>
+      {props.tasks.map((t) => (
+        <Task key={t.id} title={t.title} hashtags={t.hashtags} />
+      ))}
     </div>
   );
 };

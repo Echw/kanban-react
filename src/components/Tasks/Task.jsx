@@ -1,15 +1,15 @@
 import React from "react";
 import classes from "./Task.module.css";
 
-const Task = () => {
+const Task = (props) => {
   return (
     <div className={classes.taskBox}>
       <div className={classes.lineBox}>
-        <p>Learn React</p>
+        <p>{props.title}</p>
         <button>Edit</button>
       </div>
       <div className={classes.hashtag}>
-        <p>Design</p>
+        <p>{props.hashtags}</p>
       </div>
     </div>
   );

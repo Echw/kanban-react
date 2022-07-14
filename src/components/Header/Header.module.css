@@ -37,7 +37,9 @@
   border-radius: 15px;
   background: transparent;
 }
-
+.header input:focus {
+  background: rgba(255, 255, 255, 0.616);
+}
 .header button {
   display: flex;
   flex-direction: row;
@@ -47,4 +49,12 @@
   background: #ffffff;
   border-radius: 15px;
   border: none;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.header button:hover {
+  background: #356d7e;
+  color: white;
+  transition: 200ms;
 }

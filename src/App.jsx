@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header/Header";
 import Column from "./components/Progress Column/Column";
 import classes from "./App.module.css";
 import { COLUMNS } from "./utils/constants/columns.constant";
+import AddTaskModal from "./components/Modal/AddTask";
+import NewTaskContent from "./components/Modal/NewTaskContent";
 
 function App() {
+  const [modal, setModal] = useState(false);
+
+  const modalHandler = () => {
+    setModal(!modal);
+  };
+
   return (
     <>
-      <Header />
+      {modal && (
+        <AddTaskModal onClick={modalHandler}>
+          <NewTaskContent onClick={modalHandler} />
+        </AddTaskModal>
+      )}
+      <Header onClick={modalHandler} />
       <div className={classes.columnsBox}>
         {COLUMNS.map((c) => (
           <Column
@@ -15,6 +28,7 @@ function App() {
             key={c.id}
             name={c.name}
             color={c.color}
+            tasks={c.tasks}
           />
         ))}
       </div>
